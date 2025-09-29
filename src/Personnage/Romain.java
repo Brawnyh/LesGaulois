@@ -25,12 +25,11 @@ public class Romain {
 		return "Le romain " + nom + " : ";
 	}
 	
-	public void recevoirCoup(int force) {
-
-		self.force=self.force-force;
+	public void recevoirCoup(int forceG) {
 		
-		if (self.force>1) {
+		if (force>1) {
 			parler( "AUCHHHH!");
+			force=force-forceG;
 		}else {
 			parler("j'abandonne");
 		}

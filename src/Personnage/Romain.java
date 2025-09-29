@@ -12,6 +12,10 @@ public class Romain {
 	public String getNom() {
 		return nom;
 	}
+	
+	public int getForce() {
+		return force;
+	}
 
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "\"" + texte + "\"");
@@ -21,6 +25,19 @@ public class Romain {
 		return "Le romain " + nom + " : ";
 	}
 	
+	public void recevoirCoup(int force) {
+
+		self.force=self.force-force;
+		
+		if (self.force>1) {
+			parler( "AUCHHHH!");
+		}else {
+			parler("j'abandonne");
+		}
+		
+	}
+
+
 	//hello world
 	
 	

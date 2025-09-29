@@ -14,7 +14,7 @@ public class TestGaulois {
 		Obelix.parler("Bonjour Astérix. Ca te dirais d'aller chasser des sangliers?");
 		Asterix.parler("Oui très bonne idée.");
 		System.out.println("Dans la forêt Astérix et Obélix tombent nez à nez sur le romain Minus.");
-		for (int i=0;i<=3;i++) {
+		for (int i=0;i<3;i++) {
 			Obelix.frapper(Minus);
 		}
 		

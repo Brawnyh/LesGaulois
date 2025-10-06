@@ -12,7 +12,7 @@ public class TestGaulois {
         Gaulois abraracourcix = new Gaulois("Abraracourcix", 6);
         Village village = new Village("Village des Irréductibles", abraracourcix, 30);
 
-        //doit pas lancer d'exception mais renvoyer null
+      
         Gaulois g = village.trouverVillageois(30);
         System.out.println(g);
 
@@ -35,6 +35,8 @@ public class TestGaulois {
         asterix.sePresenter();       // habitant
         doublePolemix.sePresenter(); // sans village
         
+        
+        //TEST EQUIPEMENT
         Romain Pleido = new Romain("Pleido",29);
 		Pleido.sEquiper(Equipement.CASQUE);
 		Pleido.sEquiper(Equipement.BOUCLIER);

@@ -1,5 +1,7 @@
 package Personnage;
 
+import Objets.Chaudron;
+
 public class Druide {
 	private String nom;
 	private int force;
@@ -41,6 +43,8 @@ public class Druide {
 
 	private String prendreParole() {
 		return "Le Druide " + nom + " : ";
+		
+		
 	}
 	
 	

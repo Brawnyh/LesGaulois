@@ -5,6 +5,7 @@ public class Gaulois {
 	private String nom;
 	private int force;
 	private int effetPotion=1;
+	private String village = null;
 
 	public Gaulois(String nom, int force) {
 		super();
@@ -54,6 +55,15 @@ public class Gaulois {
 		romain.recevoirCoup((force * effetPotion) / 3);
 		}
 
-	
-	 
+    public void setVillage(String nomVillage) {
+        this.village = nomVillage;
+    }
+
+    public void sePresenter() {
+        if (village != null) {
+            parler("Bonjour, je m'appelle " + nom + ". J'habite le village " + village + ".");
+        } else {
+            parler("Bonjour, je m'appelle " + nom + ". Je voyage de villages en villages.");
+        }
+    }
 }

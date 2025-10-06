@@ -76,7 +76,10 @@ public class Romain {
         System.out.println("Le soldat " + nom + " " + action + " " + e + ".");
     }
 	
-    
+    public static void main(String[] args) {
+		Romain juan = new Romain("Juan",-6);
+		
+	}
 
 }
 

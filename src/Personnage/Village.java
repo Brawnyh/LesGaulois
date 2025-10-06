@@ -22,6 +22,8 @@ public class Village {
             System.out.println("Le village est plein !");
         }
     }
+    
+   
 
     public Gaulois trouverVillageois(int numero) {
        
@@ -44,16 +46,13 @@ public class Village {
         }
     }
 
-    // main demandé par le TP
     public static void main(String[] args) {
         Gaulois abraracourcix = new Gaulois("Abraracourcix", 6);
         Village village = new Village("Village des Irréductibles", abraracourcix, 30);
 
-        // tester trouverVillageois(30) : ne doit pas lancer d'exception mais renvoyer null
         Gaulois g = village.trouverVillageois(30);
         System.out.println(g);
 
-        // ajouter Astérix et tester
         Gaulois asterix = new Gaulois("Astérix", 8);
         village.ajouterVillageois(asterix);
 
@@ -63,16 +62,15 @@ public class Village {
         Gaulois gaulois2 = village.trouverVillageois(2);
         System.out.println(gaulois2);
 
-        // ajouter Obélix et afficher
         Gaulois obelix = new Gaulois("Obélix", 25);
         village.ajouterVillageois(obelix);
         village.afficherVillageois();
 
-        // DoublePolémix
         Gaulois doublePolemix = new Gaulois("DoublePolémix", 4);
 
-        abraracourcix.sePresenter(); // chef
-        asterix.sePresenter();       // habitant
-        doublePolemix.sePresenter(); // sans village
+        abraracourcix.sePresenter(); 
+        asterix.sePresenter();      
+        doublePolemix.sePresenter();
+
     }
 }

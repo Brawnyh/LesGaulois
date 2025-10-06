@@ -37,6 +37,9 @@ public class Chaudron {
         return quantitePotion;
     }
 
+  
+    
+    
     public int getForcePotion() {
         return forcePotion;
     }

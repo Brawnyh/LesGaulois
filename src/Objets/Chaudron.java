@@ -1,4 +1,4 @@
-package Personnage;
+package Objets;
 
 public class Chaudron {
 	private int quantitePotion;
@@ -31,4 +31,14 @@ public class Chaudron {
 		System.out.println("J'ai concocté" + quantitePotion + "doses de potion magique. Elle a une force de " + forcePotion + ".");
 		
 	}
+	
+	
+    public int getQuantitePotion() {
+        return quantitePotion;
+    }
+
+    public int getForcePotion() {
+        return forcePotion;
+    }
+	
 }
